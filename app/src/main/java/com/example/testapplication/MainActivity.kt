@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting(viewModel)
+                    //Greeting(viewModel)
                 }
             }
         }
@@ -42,9 +42,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun Greeting(viewModel: ViewModel) {
 
-
     val text = viewModel.text.collectAsState()
-
 
     Column(
         modifier = Modifier.fillMaxSize(1f),
@@ -74,7 +72,6 @@ fun Greeting(viewModel: ViewModel) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-
 
     TestApplicationTheme {
 
