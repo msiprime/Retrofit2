@@ -17,6 +17,7 @@ import kotlinx.coroutines.launch
 class ProductsViewModel(
     private var productRepository: ProductRepository
 ) : ViewModel() {
+   // private var _products = MutableStateFlow<List<Product>>(emptyList())
     private var _products = MutableStateFlow<List<Product>>(emptyList())
     val products = _products.asStateFlow()
 
